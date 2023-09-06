@@ -21,8 +21,10 @@ export default function Section({ parallax, imagePath, children, id }: SectionPr
     }
 
     return (
-        <section>
-            {children}
+        <section id={id} className="relative w-full flex justify-center items-center mt-10">
+            <div className="max-w-7xl flex flex-col items-center">
+                {children}
+            </div>
         </section>
     )
 }

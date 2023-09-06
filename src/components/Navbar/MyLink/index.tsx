@@ -7,7 +7,6 @@ interface MyLinkProps {
 }
 
 export default function MyLink({ path, children, id }: MyLinkProps) {
-    // const router = useRouter()
     
     return (
         <li>

@@ -1,18 +1,21 @@
 'use client'
 
-import Card from "./components/Card";
-import Navbar from "./components/Navbar";
-import Section from "./components/Section";
-import Text from "./components/Text";
-import TimelineCard from "./components/TimelineCard";
+import Card from "@/components/Card"
+import IdentityCard from "@/components/IdentityCard"
+import InformativeCard from "@/components/InformativeCard"
+import Navbar from "@/components/Navbar"
+import Section from "@/components/Section"
+import Text from "@/components/Text"
+import TimelineCard from "@/components/TimelineCard"
+import { AcademicCapIcon, ClockIcon, StarIcon } from "@heroicons/react/24/outline"
 
 export default function Home() {
 
   if (typeof window !== 'undefined') {
-    const menuItems = document.querySelectorAll('#link_item');
+    const menuItems = document.querySelectorAll('#link_item')
 
     window.addEventListener('scroll', () => {
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY
 
       // Verifique qual seção está visível
       // Você pode usar o método getBoundingClientRect() para isso
@@ -20,20 +23,20 @@ export default function Home() {
       // Adicione/remova a classe para destacar o item do menu correspondente
       menuItems.forEach((menuItem) => {
         if (menuItem !== null && menuItem) {
-          const sectionId = menuItem.getAttribute('href')!.substring(1);
-          const section: HTMLElement | null = document.querySelector(sectionId);
+          const sectionId = menuItem.getAttribute('href')!.substring(1)
+          const section: HTMLElement | null = document.querySelector(sectionId)
 
-          const sectionTop = section!.offsetTop;
-          const sectionHeight = section!.offsetHeight;
+          const sectionTop = section!.offsetTop
+          const sectionHeight = section!.offsetHeight
   
           if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-            menuItem.classList.add('active'); // Adicione uma classe 'active' para destacar o item
+            menuItem.classList.add('active') // Adicione uma classe 'active' para destacar o item
           } else {
-            menuItem.classList.remove('active'); // Remova a classe 'active' se não estiver visível
+            menuItem.classList.remove('active') // Remova a classe 'active' se não estiver visível
           }
         }
-      });
-    });
+      })
+    })
   }
 
 
@@ -127,9 +130,29 @@ export default function Home() {
             </div>
           </div>
         </Section>
+				<Section id="nutricionista" parallax={false}>
+					<Text main="Nutricionista" subtitle="Esportiva" bg={false}/>
+					<IdentityCard name="Ana Clara Ferreira" firstWord="Arthur" citation="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quidem quia earum nobis iusto deserunt quae, laboriosam veritatis tempore aliquam porro tenetur repellendus labore velit rem? Iure beatae aliquam incidunt." imagePath="ana-clara" />
+          <div className="w-full flex items-center justify-between mt-4">
+            <InformativeCard Icon={ClockIcon} title="+ 10 anos de experiência" />
+            <InformativeCard Icon={ClockIcon} title="+ 10 anos de experiência" />
+            <InformativeCard Icon={ClockIcon} title="+ 10 anos de experiência" />
+          </div>
+				</Section>
+        <Section id="treinador" parallax={false}>
+          <Text main="Treinador" subtitle="Esportivo" bg={false} />
+          <IdentityCard name="João Navarro" firstWord="Rfaelégay" citation="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit sapiente tempore mollitia sequi molestiae doloribus odio, atque expedita? Nihil impedit veritatis asperiores natus, dolores eos magnam perspiciatis voluptatum. Nobis, tenetur." imagePath="joao-navarro" />
+          <div className="w-full flex items-center justify-between mt-4">
+            <InformativeCard Icon={ClockIcon} title="+ 10 anos de experiência" />
+            <InformativeCard Icon={AcademicCapIcon} title="+ 10 anos de experiência" />
+            <InformativeCard Icon={StarIcon} title="+ 10 anos de experiência" />
+          </div>
+        </Section>
+        <Section id="beneficios" parallax={true}>
+          <h3 className="text-9xl">SWIPER</h3>
+        </Section>
       </main>
       <footer>
-
       </footer>
     </>
   )

@@ -11,8 +11,8 @@ export default function Navbar() {
                     <ul className="flex gap-4">
                         <MyLink id={true} path="#inicio">Início</MyLink>
                         <MyLink id={true} path="#funciona">Como funciona</MyLink>
-                        <MyLink id={false} path="#nutricionista">Nutricionista</MyLink>
-                        <MyLink id={false} path="#treinador">Treinador</MyLink>
+                        <MyLink id={true} path="#nutricionista">Nutricionista</MyLink>
+                        <MyLink id={true} path="#treinador">Treinador</MyLink>
                         <MyLink id={false} path="#beneficios">Benefícios</MyLink>
                         <MyLink id={false} path="#oferta">Oferta</MyLink>
                         <MyLink id={false} path="#duvidas">Dúvidas</MyLink>

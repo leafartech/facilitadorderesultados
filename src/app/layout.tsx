@@ -2,11 +2,11 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 
-const inter = Montserrat({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Combo Facilitador de resultados',
-  description: 'Combo exclusivo do João Navarro (Treinador) + Ana Clara Ferreira (Nutricionista) com desconto!',
+  description: 'Combo exclusivo do João Navarro (Treinador) com a Ana Clara Ferreira (Nutricionista) com desconto!',
 }
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={montserrat.className}>{children}</body>
     </html>
   )
 }
