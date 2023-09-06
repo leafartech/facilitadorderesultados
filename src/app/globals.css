@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-xl border border-my bg-my font-semibold text-lg px-4 py-3 text-white hover:bg-my2 transition 
+  }
+  .float-number {
+    @apply rounded-full bg-white text-my font-bold text-xl w-8 h-8 flex items-center justify-center shadow-lg z-10
+  }
+}
+
+.active {
+  color: #EB3D57;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  font-weight: 600; 
+  text-shadow: 0px 4px 24px rgba(235, 61, 87, 0.25);
+}
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: calc(50% - 4px);
+  width: 6px;
+  height: 6px;
+  background: linear-gradient(104deg, #FF6A80 0%, #EB3D57 48.44%, #FF6D83 100%);
+  border-radius: 999px;
+}
+.grad-main {
+  background: linear-gradient(104deg, #FF6980 0%, #EB3D57 48.44%, #FF6F84 100%);
+}
+.shadow {
+  box-shadow: 0px 4px 24px 0px rgba(235, 61, 87, 0.50);
+}
+.text-shadow {
+  text-shadow: 0px 4px 24px rgba(235, 61, 87, 0.25);
+}
+.parallax1 {
+  background-image: url('/images/parallax1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 1) inset;
+}
