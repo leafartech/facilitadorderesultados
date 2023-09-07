@@ -11,7 +11,7 @@ export default function Section({ parallax, imagePath, children, id }: SectionPr
 
     if (parallax) {
         return (
-            <section id={id} className={`relative parallax1 bg-fixed py-12`}>
+            <section id={id} className={`relative parallax1 bg-fixed py-12 mt-10`}>
                 {/* <div className="absolute top-0 left-0 bg-black/70 w-full h-full"></div> */}
                 <div className="z-10">
                     {children}

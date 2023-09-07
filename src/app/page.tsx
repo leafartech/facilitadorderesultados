@@ -3,6 +3,7 @@
 import Card from "@/components/Card"
 import IdentityCard from "@/components/IdentityCard"
 import InformativeCard from "@/components/InformativeCard"
+import MySwiper from "@/components/MySwiper"
 import Navbar from "@/components/Navbar"
 import Section from "@/components/Section"
 import Text from "@/components/Text"
@@ -149,7 +150,13 @@ export default function Home() {
           </div>
         </Section>
         <Section id="beneficios" parallax={true}>
-          <h3 className="text-9xl">SWIPER</h3>
+          <Text bg={true} main="Benefícios" subtitle="do Combo Facilitador de Resultados" />
+          <div className="w-full h-full flex justify-center items-center mt-4">
+            <MySwiper />
+          </div>
+        </Section>
+        <Section id="oferta" parallax={false}>
+          <Text bg={false} main="Combo Facilitador de Resultados" subtitle="Serviço de excelência, oferta única!" />
         </Section>
       </main>
       <footer>

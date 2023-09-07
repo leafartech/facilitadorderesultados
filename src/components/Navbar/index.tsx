@@ -13,8 +13,8 @@ export default function Navbar() {
                         <MyLink id={true} path="#funciona">Como funciona</MyLink>
                         <MyLink id={true} path="#nutricionista">Nutricionista</MyLink>
                         <MyLink id={true} path="#treinador">Treinador</MyLink>
-                        <MyLink id={false} path="#beneficios">Benefícios</MyLink>
-                        <MyLink id={false} path="#oferta">Oferta</MyLink>
+                        <MyLink id={true} path="#beneficios">Benefícios</MyLink>
+                        <MyLink id={true} path="#oferta">Oferta</MyLink>
                         <MyLink id={false} path="#duvidas">Dúvidas</MyLink>
                     </ul>
                 </div>
