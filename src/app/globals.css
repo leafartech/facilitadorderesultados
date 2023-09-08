@@ -48,12 +48,14 @@ html {
   background-image: url('/images/parallax1.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 1) inset;
 }
 .parallax2 {
   background-image: url('/images/parallax2.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 1) inset;
 }
 .swiper {
@@ -78,8 +80,10 @@ html {
 @media (max-width: 425px) {
   .parallax1 {
     background-position: center;
+    background-attachment: local;
   }
   .parallax2 {
     background-position: center;
+    background-attachment: local;
   }
 }
