@@ -9,7 +9,7 @@ import Navbar from "@/components/Navbar"
 import Section from "@/components/Section"
 import Text from "@/components/Text"
 import TimelineCard from "@/components/TimelineCard"
-import { AcademicCapIcon, ClockIcon, StarIcon } from "@heroicons/react/24/outline"
+import { StarIcon } from "@heroicons/react/24/outline"
 
 export default function Home() {
 
@@ -139,29 +139,29 @@ export default function Home() {
         </Section>
         <Section id="nutricionista" parallax={false}>
           <Text main="Nutricionista" subtitle="Esportiva" bg={false} />
-          <IdentityCard name="Ana Clara Ferreira" firstWord="Olá, " citation={
+          <IdentityCard href="https://instagram.com/nutri.anaclarafsaa?igshid=MzRlODBiNWFlZA==" name="Ana Clara Ferreira" firstWord="Olá, " citation={
             ['eu me chamo Ana Clara e sou especialista na área da nutrição!',
               'Meu propósito é transformar vidas por meio da alimentação, promovendo uma mudança de comportamento de forma natural e estruturada.',
               'Trabalho para desenvolver dietas que se integram perfeitamente à rotina de cada indivíduo, tornando a jornada alimentar não apenas saudável, mas também prazerosa e saborosa.']
           } imagePath="ana-clara" />
           <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-20 items-center justify-between mt-8 sm:mt-16 pb-8 px-4 sm:px-0">
-            <InformativeCard Icon={ClockIcon} title="+ 10 anos de experiência" />
-            <InformativeCard Icon={ClockIcon} title="Pós graduada na Facuminas" />
-            <InformativeCard Icon={ClockIcon} title="Graduada na Uniguaçu" />
+            <InformativeCard  title="+ 10 anos de experiência" />
+            <InformativeCard  title="Pós graduada na Facuminas" />
+            <InformativeCard  title="Graduada na Uniguaçu" />
           </div>
           <img src="./images/rect.png" alt="retângulo" className="hidden sm:block absolute top-0 left-0 h-48" />
         </Section>
         <Section id="treinador" parallax={false}>
           <Text main="Treinador" subtitle="Esportivo" bg={false} />
-          <IdentityCard name="João Navarro" firstWord="Opa, " citation={
+          <IdentityCard href="https://instagram.com/joaonavarrotreinador?igshid=MzRlODBiNWFlZA==" name="João Navarro" firstWord="Opa, " citation={
             ['me chamo João e sou especialista em treinamentos.',
               'A prioridade do meu trabalho é cuidarmos da sua saúde de forma responsável.',
               'Como faço isso? Através de uma abordagem individualizada, eu consigo proporcionar treinamentos de excelência, contribuindo para uma qualidade de vida e sensação de bem-estar excepcionais em sua vida!']
           } imagePath="joao-navarro" />
           <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-20 items-center justify-between mt-8 sm:mt-16 pb-8 px-4 sm:px-0">
-            <InformativeCard Icon={StarIcon} title="Graduado na Uniguaçu" />
-            <InformativeCard Icon={ClockIcon} title="+ 9 anos de experiência" />
-            <InformativeCard Icon={AcademicCapIcon} title="Planos individualizados" />
+            <InformativeCard title="Graduado na Uniguaçu" />
+            <InformativeCard title="+ 9 anos de experiência" />
+            <InformativeCard title="Planos individualizados" />
           </div>
           <img src="./images/rect2.png" alt="retângulo" className="hidden sm:block absolute top-0 right-0 h-48" />
           <img src="./images/rect.png" alt="retângulo" className="hidden sm:block absolute bottom-0 left-0 h-48" />
@@ -240,8 +240,23 @@ export default function Home() {
           </div>
         </Section>
       </main>
-      <footer className="py-8 bg-black flex items-center justify-center gap-2 flex-col text-white/50">
-        <p>Todos os direitos reservados</p>
+      <footer className="py-8 bg-black flex items-center justify-center gap-2 flex-col">
+        <div className=" w-full max-w-5xl grid grid-cols-2 gap-2 place-items-center">
+          <div className="flex flex-col gap-1">
+          <span className="text-xl text-my mb-1">Explore</span>
+          <a className="text-zinc-300 text-sm transition hover:text-my" href="#inicio">Inicio</a>
+          <a className="text-zinc-300 text-sm transition hover:text-my" href="#funciona">Como Funciona</a>
+          <a className="text-zinc-300 text-sm transition hover:text-my" href="#nutricionista">Nutricionista</a>
+          </div>
+          <div className="flex flex-col gap-1">
+          <a className="text-zinc-300 text-sm transition hover:text-my" href="#treinador">Treinador</a>
+          <a className="text-zinc-300 text-sm transition hover:text-my" href="#beneficios">Beneficios</a>
+          <a className="text-zinc-300 text-sm transition hover:text-my" href="#oferta">Oferta</a>
+          <a className="text-zinc-300 text-sm transition hover:text-my col-end-1" href="#duvidas">Dúvidas</a>
+
+          </div>
+        </div>
+        <p className="text-zinc-300">Todos os direitos reservados 2023 <span className="text-my">&copy;João Navarro | Ana Clara Ferreira</span></p>
       </footer>
     </>
   )
