@@ -46,22 +46,23 @@ export default function Home() {
     <>
       <header className="relative" id="inicio">
         <Navbar />
-        <div className="relative w-full min-h-screen flex flex-col items-center justify-center">
+        <div className="relative w-full min-h-screen flex flex-col items-center justify-center pt-[72px] sm:pt-0">
           <div className="max-w-7xl flex flex-col-reverse sm:grid sm:grid-cols-2 mb-6 sm:mb-0">
-            <div className="flex flex-col justify-center gap-3 max-w-xl px-4 sm:px-0">
+            <div className="flex flex-col justify-center gap-3 max-w-xl px-4 sm:px-0 mt-4 sm:mt-0">
               <h1 className="font-extrabold text-2xl sm:text-5xl"><span className="text-my text-shadow">COMBO </span>FACILITADOR  <br /> DE RESULTADOS</h1>
               <p className="font-medium text-sm sm:text-base">
                 Revitalize seu estilo de vida e conquiste seus objetivos de forma eficiente e sustentável por meio de nossa <span className="font-semibold"> abordagem individualizada</span>.
               </p>
               <div className="mt-2 w-full">
-                <a href="" className="btn shadow w-full block sm:inline text-center">Quero saber mais</a>
+                <a href="#oferta" className="btn shadow w-full block sm:inline text-center">Quero saber mais</a>
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <img src="./images/bg.png" alt="Imagem do João + Ana" className="w-full sm:h-[440px]" />
+            <div className="flex items-center justify-center px-2 sm:px-0">
+              <img src="./images/bgPc.png" alt="Imagem do João + Ana" className="hidden sm:block w-full sm:w-[452px] sm:h-[440px]" />
+              <img src="./images/bgMob.png" alt="Imagem do João + Ana" className="block sm:hidden w-full sm:w-[452px] sm:h-[440px]" />
             </div>
           </div>
-          <div className="relative sm:absolute sm:bottom-2 max-w-7xl w-full flex flex-col sm:flex-row gap-3 sm:gap-12 items-center justify-between px-4">
+          <div className="relative sm:absolute sm:bottom-2 max-w-7xl w-full flex flex-col sm:flex-row gap-3 sm:gap-8 items-center justify-between px-4">
             <Card
               href="nutricionista"
               main="Nutrição"
@@ -70,7 +71,7 @@ export default function Home() {
             >
               <img src="./images/cards/apple.png" alt="" className="h-6 w-6" />
             </Card>
-            <div className="relative hidden sm:flex items-center justify-center h-2 w-5">
+            <div className="relative hidden sm:flex items-center justify-center h-16 w-16">
               <span className="absolute bg-gray-900 h-[2px] rounded-full w-full"></span>
               <span className="absolute bg-gray-900 h-[2px] rounded-full w-full rotate-90"></span>
             </div>
@@ -82,7 +83,7 @@ export default function Home() {
             >
               <img src="./images/cards/gym.png" alt="" className="h-6 w-6" />
             </Card>
-            <div className=" relative hidden sm:flex items-center justify-center flex-col h-20 w-6 gap-1 translate-y-2">
+            <div className=" relative hidden sm:flex items-center justify-center flex-col h-20 w-16 gap-1 translate-y-2">
               <span className="bg-gray-900 h-[2px] mb-[2px] rounded-full w-full"></span>
               <span className="bg-gray-900 h-[2px] -translate-y-[14px] rounded-full w-full"></span>
             </div>
@@ -98,7 +99,7 @@ export default function Home() {
         <img src="./images/rect.png" alt="" className="absolute top-12 h-56 hidden sm:block" />
         {/* <img src="./images/rect4.png" alt="" className="absolute bottom-12 -left-12 h-24" /> */}
       </header>
-      <main className="mt-20 pb-20">
+      <main className="sm:mt-20 pb-20">
         <Section id="funciona" parallax={true} imagePath="parallax1">
           <div className="z-10 flex flex-col items-center">
             <Text
@@ -135,6 +136,9 @@ export default function Home() {
                 </TimelineCard>
               </div>
             </div>
+            <div className="mt-4 sm:mt-12 w-full flex justify-center px-4 sm:px-0">
+              <a href="#oferta" className="btn shadow w-full sm:max-w-xs block sm:inline text-center">Quero saber mais</a>
+            </div>
           </div>
         </Section>
         <Section id="nutricionista" parallax={false}>
@@ -145,9 +149,9 @@ export default function Home() {
               'Trabalho para desenvolver dietas que se integram perfeitamente à rotina de cada indivíduo, tornando a jornada alimentar não apenas saudável, mas também prazerosa e saborosa.']
           } imagePath="ana-clara" />
           <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-20 items-center justify-between mt-8 sm:mt-16 pb-8 px-4 sm:px-0">
-            <InformativeCard  title="+ 10 anos de experiência" />
-            <InformativeCard  title="Pós graduada na Facuminas" />
-            <InformativeCard  title="Graduada na Uniguaçu" />
+            <InformativeCard title="+ 10 anos de experiência" />
+            <InformativeCard title="Pós graduada na Facuminas" />
+            <InformativeCard title="Graduada na Uniguaçu" />
           </div>
           <img src="./images/rect.png" alt="retângulo" className="hidden sm:block absolute top-0 left-0 h-48" />
         </Section>
@@ -168,13 +172,16 @@ export default function Home() {
         </Section>
         <Section id="beneficios" parallax={true} imagePath="parallax2">
           <Text bg={true} main="Benefícios" subtitle="do Combo Facilitador de Resultados" />
-          <div className="w-full h-full flex justify-center items-center mt-4 py-12 sm:py-24">
+          <div className="w-full h-full flex-col flex justify-center items-center mt-4 pt-6 pb-6 sm:py-24">
             <MySwiper />
+          </div>
+          <div className="mt-4 sm:mt-12 w-full flex justify-center px-4 sm:px-0">
+            <a href="#oferta" className="btn shadow w-full sm:max-w-xs block sm:inline text-center">Quero saber mais</a>
           </div>
         </Section>
         <Section id="oferta" parallax={false}>
           <Text bg={false} main="Combo Facilitador de Resultados" subtitle="Serviço de excelência, oferta única!" />
-          <div className="relative w-full mt-8 sm:mt-16 mb-24">
+          <div className="relative w-full mt-8 sm:mt-16 sm:mb-24">
             <img src="./images/rect3.png" alt="" className="hidden sm:block absolute -left-56 -top-24 -z-10" />
             <img src="./images/rect3.png" alt="" className="hidden sm:block absolute -right-56 -bottom-24 -z-10" />
             <div className="max-w-lg w-full rounded-3xl flex flex-col grad-main py-10 px-8 border border-white shadow">
@@ -193,7 +200,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="border-y-2 border-white/50 py-6 my-6 px-2">
-                <p className="text-white/50 font-medium">Conforme a duração do plano aumenta, o preço que você vai pagar diminui!</p>
+                <p className="text-white/70 font-medium">Conforme a duração do plano aumenta, o preço que você vai pagar diminui!</p>
               </div>
               <div className="text-white flex flex-col">
                 <h5 className="font-semibold text-3xl">Planos</h5>
@@ -212,7 +219,7 @@ export default function Home() {
         </Section>
         <Section id="duvidas" parallax={false}>
           <Text bg={false} main="FAQ" subtitle="Dúvidas frequentes" />
-          <div className="sm:w-[700px] flex gap-8 flex-wrap justify-between px-4 sm:px-0">
+          <div className="sm:w-[700px] flex gap-8 flex-wrap justify-between mt-8 px-4 sm:px-0">
             <Dropdown
               title="Dúvida 1"
               text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
@@ -240,23 +247,26 @@ export default function Home() {
           </div>
         </Section>
       </main>
-      <footer className="py-8 bg-black flex items-center justify-center gap-2 flex-col">
-        <div className=" w-full max-w-5xl grid grid-cols-2 gap-2 place-items-center">
-          <div className="flex flex-col gap-1">
-          <span className="text-xl text-my mb-1">Explore</span>
-          <a className="text-zinc-300 text-sm transition hover:text-my" href="#inicio">Inicio</a>
-          <a className="text-zinc-300 text-sm transition hover:text-my" href="#funciona">Como Funciona</a>
-          <a className="text-zinc-300 text-sm transition hover:text-my" href="#nutricionista">Nutricionista</a>
+      <footer className="py-8 bg-black flex sm:items-center sm:justify-center justify-center gap-2 flex-col px-4">
+        <div className="max-w-2xl">
+          <div className=" w-full max-w-5xl flex flex-col gap-2 items-start sm:items-start text-zinc-300 font-medium text-sm">
+            <span className="text-xl text-my mb-1">Explore</span>
+            <div className="flex sm:justify-start justify-start gap-12 sm:gap-32 w-full">
+              <div className="flex flex-col gap-1">
+                <a className="transition hover:text-my" href="#inicio">Inicio</a>
+                <a className="transition hover:text-my" href="#funciona">Como Funciona</a>
+                <a className="transition hover:text-my" href="#nutricionista">Nutricionista</a>
+                <a className="transition hover:text-my" href="#treinador">Treinador</a>
+              </div>
+              <div className="flex flex-col gap-1">
+                <a className="transition hover:text-my" href="#beneficios">Beneficios</a>
+                <a className="transition hover:text-my" href="#oferta">Oferta</a>
+                <a className="transition hover:text-my" href="#duvidas">Dúvidas</a>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col gap-1">
-          <a className="text-zinc-300 text-sm transition hover:text-my" href="#treinador">Treinador</a>
-          <a className="text-zinc-300 text-sm transition hover:text-my" href="#beneficios">Beneficios</a>
-          <a className="text-zinc-300 text-sm transition hover:text-my" href="#oferta">Oferta</a>
-          <a className="text-zinc-300 text-sm transition hover:text-my col-end-1" href="#duvidas">Dúvidas</a>
-
-          </div>
+          <p className="text-zinc-300/60 font-medium text-center text-xs mt-8">Todos os direitos reservados 2023<br /> <span className="text-my">&copy;João Navarro | Ana Clara Ferreira</span></p>
         </div>
-        <p className="text-zinc-300">Todos os direitos reservados 2023 <span className="text-my">&copy;João Navarro | Ana Clara Ferreira</span></p>
       </footer>
     </>
   )

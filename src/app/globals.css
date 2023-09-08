@@ -62,16 +62,18 @@ html {
   padding-bottom: 50px;
 }
 .swiper-slide {
-  background-color: #fff;
-  width: 300px!important;
-  height: 300px!important;
+  background-color: rgb(235, 61, 87, 0.4);
+  border: 1px solid rgba(255, 255, 255, .5);
+  width: 340px!important;
+  height: 340px!important;
   border-radius: 24px;
   overflow: hidden;
   padding: 14px;
 }
-
 .swiper-pagination-bullet {
-  background-color: #EB3D57!important;
+  z-index: 1000;
+  /* transform: translateY(24px); */
+  background-color: #fff!important;
 }
 @media (max-width: 425px) {
   .parallax1 {
