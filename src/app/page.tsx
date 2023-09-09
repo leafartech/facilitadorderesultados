@@ -131,7 +131,7 @@ export default function Home() {
               <div className="relative sm:absolute bottom-0 sm:left-24">
                 <TimelineCard
                   main="Treinador"
-                  paragraph="1 consulta + avaliação postural + treino individualizado via APP de celular + correção de exercícios via envio de vídeos no WhatsApp + suporte on-line"
+                  paragraph="1 consulta + avaliação postural + treino individualizado via APP de celular + correção de exercícios via envio de vídeos no WhatsApp + suporte online."
                 >
                   <p className="absolute -top-4 -left-2 float-number sm:left-[90%] sm:top-[58%] sm:-right-4">3</p>
                 </TimelineCard>
