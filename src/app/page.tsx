@@ -110,29 +110,30 @@ export default function Home() {
             <div className="relative h-[700px] sm:h-[824px] max-w-5xl w-full flex flex-col sm:flex-row sm:items-center px-4 gap-8 sm:gap-0 mt-6">
               <div className="relative sm:absolute sm:top-12">
                 <TimelineCard
-                  main="Aquisição"
+                  main="Contato"
                   // É o momento crucial em que você decide investir em si mesmo
-                  paragraph="A aquisição é o momento crucial em que você decide investir em si mesmo e dá o primeiro passo para a sua jornada em direção a um estilo de vida mais saudável e equilibrado."
+                  paragraph="Esta é a fase em que estabelecemos uma base sólida para um relacionamento de confiança. Em até 72h, o treinador e a nutricionista entrarão em contato de forma individual."
+                  // paragraph="Em até 72 horas, estabeleceremos uma base sólida para um relacionamento de confiança, garantindo que sua experiência seja personalizada e voltada para o seu objetivo."
                 >
-                  <p className="absolute -top-4 -left-2 sm:-right-2 float-number">1</p>
+                  <p className="absolute -top-4 -left-2 sm:left-[90%] sm:top-[84px] float-number">1</p>
                 </TimelineCard>
               </div>
-              <img src="./images/arrow1.png" alt="" className="absolute top-[90px] left-[276px] w-[476px] h-[299px] hidden sm:block" />
+              <img src="./images/arrow1.png" alt="" className="absolute top-[90px] left-[292px] w-[418px] h-[299px] hidden sm:block" />
               <div className="relative sm:absolute right-0">
                 <TimelineCard
-                  main="Contato (até 72h)"
-                  paragraph="Esta é a fase em que estabelecemos a base sólida para um relacionamento de confiança, garantindo que sua experiência seja personalizada e voltada para o seu objetivo."
+                  main="Nutricionista"
+                  paragraph="1 consulta + feedback quinzenal + caderno de receitas práticas + manual de industrializados + acesso ao app exclusivo + método de redução de danos em restaurantes + suporte online. "
                 >
-                  <p className="absolute -top-4 -left-2 sm:-top-2 sm:-left-1 float-number">2</p>
+                  <p className="absolute -top-4 -left-2 sm:-top-1 sm:-left-1 float-number">2</p>
                 </TimelineCard>
               </div>
-              <img src="./images/arrow2.png" alt="" className="absolute bottom-[70px] right-[111px] hidden sm:block" />
+              <img src="./images/arrow2.png" alt="" className="absolute bottom-[59px] right-[92px] hidden sm:block" />
               <div className="relative sm:absolute bottom-0 sm:left-24">
                 <TimelineCard
-                  main="Consultas"
-                  paragraph="No coração do Combo Facilitador de Resultados estão as consultas nas quais os profissionais altamente qualificados trabalham em estreita colaboração com você."
+                  main="Treinador"
+                  paragraph="1 consulta + avaliação postural + treino individualizado via APP de celular + correção de exercícios via envio de vídeos no WhatsApp + suporte on-line"
                 >
-                  <p className="absolute -top-4 -left-2 float-number sm:bottom-[52px] sm:-right-4">3</p>
+                  <p className="absolute -top-4 -left-2 float-number sm:left-[90%] sm:top-[58%] sm:-right-4">3</p>
                 </TimelineCard>
               </div>
             </div>
@@ -142,16 +143,16 @@ export default function Home() {
           </div>
         </Section>
         <Section id="nutricionista" parallax={false}>
-          <Text main="Nutricionista" subtitle="Esportiva" bg={false} />
-          <IdentityCard href="https://instagram.com/nutri.anaclarafsaa?igshid=MzRlODBiNWFlZA==" name="Ana Clara Ferreira" firstWord="Olá, " citation={
-            ['eu me chamo Ana Clara e sou especialista na área da nutrição!',
-              'Meu propósito é transformar vidas por meio da alimentação, promovendo uma mudança de comportamento de forma natural e estruturada.',
+          <Text main="Nutricionista" subtitle="Esportiva e comportamental" bg={false} />
+          <IdentityCard href="https://instagram.com/nutri.anaclarafsaa?igshid=MzRlODBiNWFlZA==" name="Ana Clara Freire" firstWord="Olá, " citation={
+            ['eu me chamo Ana Clara e sou especialista na área da nutrição esportiva!',
+              'Meu propósito é transformar vidas por meio da alimentação, promovendo uma mudança de comportamento de forma organizada.',
               'Trabalho para desenvolver dietas que se integram perfeitamente à rotina de cada indivíduo, tornando a jornada alimentar não apenas saudável, mas também prazerosa e saborosa.']
           } imagePath="ana-clara" />
           <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-20 items-center justify-between mt-8 sm:mt-16 pb-8 px-4 sm:px-0">
-            <InformativeCard title="+ 10 anos de experiência" />
-            <InformativeCard title="Pós graduada na Facuminas" />
-            <InformativeCard title="Graduada na Uniguaçu" />
+            <InformativeCard title="+ 4 anos de experiência" />
+            <InformativeCard title="Graduada no Cesupa" />
+            <InformativeCard title="Pós Graduada na Uniguaçu" />
           </div>
           <img src="./images/rect.png" alt="retângulo" className="hidden sm:block absolute top-0 left-0 h-48" />
         </Section>
@@ -205,13 +206,13 @@ export default function Home() {
               <div className="text-white flex flex-col">
                 <h5 className="font-semibold text-3xl">Planos</h5>
                 <div className="grid grid-cols-2 gap-3 mt-4">
-                  <a href="https://pay.kiwify.com.br/TMdmcNk" className="border border-white rounded-xl font-medium py-2 text-center hover:bg-white hover:text-my hover:font-bold">Mensal</a>
-                  <a href="https://pay.kiwify.com.br/icSlEZE" className="relative border border-white bg-white hover:border-white/95 hover:bg-white/95 text-my rounded-xl font-bold py-2 text-center">
+                  <a href="https://pay.kiwify.com.br/gvjUM43" className="border border-white rounded-xl font-medium py-2 text-center hover:bg-white hover:text-my hover:font-bold">Mensal</a>
+                  <a href="https://pay.kiwify.com.br/V3HSTLx" className="relative border border-white bg-white hover:border-white/95 hover:bg-white/95 text-my rounded-xl font-bold py-2 text-center">
                     <span className="absolute -top-[22px] text-sm font-medium right-0 text-white/50 flex items-end"><StarIcon className="w-5 h-5" />Favorito</span>
                     Trimestral
                   </a>
-                  <a href="https://pay.kiwify.com.br/5rhrfyy" className="border border-white rounded-xl font-medium py-2 text-center hover:bg-white hover:text-my hover:font-bold">Semestral</a>
-                  <a href="https://pay.kiwify.com.br/ejHnms7" className="border border-white rounded-xl font-medium py-2 text-center hover:bg-white hover:text-my hover:font-bold">Anual</a>
+                  <a href="https://pay.kiwify.com.br/U1VMdBb" className="border border-white rounded-xl font-medium py-2 text-center hover:bg-white hover:text-my hover:font-bold">Semestral</a>
+                  <a href="https://pay.kiwify.com.br/h5c1o4n" className="border border-white rounded-xl font-medium py-2 text-center hover:bg-white hover:text-my hover:font-bold">Anual</a>
                 </div>
               </div>
             </div>

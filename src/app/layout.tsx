@@ -6,7 +6,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Combo Facilitador de resultados',
-  description: 'Combo exclusivo do João Navarro (Treinador) com a Ana Clara Ferreira (Nutricionista) com desconto!',
+  description: 'Revitalize seu estilo de vida e conquiste seus objetivos de forma eficiente e sustentável por meio de nossa abordagem individualizada.',
 }
 
 export default function RootLayout({
