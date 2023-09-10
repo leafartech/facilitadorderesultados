@@ -222,28 +222,28 @@ export default function Home() {
           <Text bg={false} main="FAQ" subtitle="Dúvidas frequentes" />
           <div className="sm:w-[700px] flex gap-8 flex-wrap justify-between mt-8 px-4 sm:px-0">
             <Dropdown
-              title="Dúvida 1"
-              text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
+              title="Por onde receberei a dieta e o treino?"
+              text="Receberá por meio de um aplicativo exclusivo que será disponibilizado e o acesso será de acordo com o templo do plano contratado."
             />
             <Dropdown
-              title="Dúvida 2"
-              text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
+              title="O app disponibilizado é pago?"
+              text="Não! ele é disponibilizado de forma 100% gratuita aos pacientes."
             />
             <Dropdown
-              title="Dúvida 3"
-              text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
+              title="Como é o acompahamento para quem não pode ir presencialemnte?"
+              text="O acompanhamento será online, terá a mesma qualidade da presencial. Daremos todo o suporte possível."
             />
             <Dropdown
-              title="Dúvida 4"
-              text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
+              title="Por quanto tempo terei acesso ao suporte?"
+              text="Depende 100% do plano contratado, exemplo: no plano contratado de 30 dias, você terá 30 dias de suporte para o que você precisar!"
+              />
+            <Dropdown
+              title="Como é feita a avaliação física online?"
+              text="Sera encaminhado para vocẽ um guia de medidas em PDF para vocẽ realizar a sua própria avaliação seguindo as instruções do PDF. Nos passará as medidas, fotos e peso para fazermos a reavaliação mensalment."
             />
             <Dropdown
-              title="Dúvida 5"
-              text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
-            />
-            <Dropdown
-              title="Dúvida 6"
-              text="It includes all of the commonly used components that a website requires, such as buttons, dropdowns, navigation bars, modals, but "
+              title="Após a compra do plano posso fazer alteração para outro?"
+              text="Vocẽ terá até 7 dias para cancelar o plano atual e fazer uma nova aquisição por outro plano."
             />
           </div>
         </Section>
