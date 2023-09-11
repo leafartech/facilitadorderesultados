@@ -143,30 +143,30 @@ export default function Home() {
           </div>
         </Section>
         <Section id="nutricionista" parallax={false}>
-          <Text main="Nutricionista" subtitle="Esportiva e comportamental" bg={false} />
+          <Text main="Nutricionista" subtitle="Esportiva e Comportamental" bg={false} />
           <IdentityCard href="https://instagram.com/nutri.anaclarafsaa?igshid=MzRlODBiNWFlZA==" name="Ana Clara Freire" firstWord="Olá, " citation={
-            ['eu me chamo Ana Clara e sou especialista na área da nutrição esportiva!',
+            ['eu me chamo Ana Clara e sou especialista na área da nutrição esportiva e comportamental!',
               'Meu propósito é transformar vidas por meio da alimentação, promovendo uma mudança de comportamento de forma organizada.',
               'Trabalho para desenvolver dietas que se integram perfeitamente à rotina de cada indivíduo, tornando a jornada alimentar não apenas saudável, mas também prazerosa e saborosa.']
           } imagePath="ana-clara" />
           <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-20 items-center justify-between mt-8 sm:mt-16 pb-8 px-4 sm:px-0">
             <InformativeCard title="+ 4 anos de experiência" />
-            <InformativeCard title="Graduada no Cesupa" />
+            <InformativeCard title="Graduada em nutrição no Cesupa" />
             <InformativeCard title="Pós Graduada na Uniguaçu" />
           </div>
           <img src="./images/rect.png" alt="retângulo" className="hidden sm:block absolute top-0 left-0 h-48" />
         </Section>
         <Section id="treinador" parallax={false}>
           <Text main="Treinador" subtitle="Esportivo" bg={false} />
-          <IdentityCard href="https://instagram.com/joaonavarrotreinador?igshid=MzRlODBiNWFlZA==" name="João Navarro" firstWord="Opa, " citation={
-            ['me chamo João e sou especialista em treinamentos.',
-              'A prioridade do meu trabalho é cuidarmos da sua saúde de forma responsável.',
-              'Como faço isso? Através de uma abordagem individualizada, eu consigo proporcionar treinamentos de excelência, contribuindo para uma qualidade de vida e sensação de bem-estar excepcionais em sua vida!']
+          <IdentityCard isJoaoPhoto={true} href="https://instagram.com/joaonavarrotreinador?igshid=MzRlODBiNWFlZA==" name="João Navarro" firstWord="Opa, " citation={
+            ['me chamo João e sou especialista em Bodybuilding & Coach.',
+              'A prioridade do meu trabalho é cuidarmos da sua saúde de forma responsável e eficaz.',
+              'Como faço isso? Através de uma abordagem totalmente individualizada, desenvolvido com base nas suas caracteísticas únicas e necessidades do seu físico, contribuindo para uma qualidade de vida e uma sensção de bem-estar para sua vida!']
           } imagePath="joao-navarro" />
           <div className="w-full max-w-5xl flex flex-col sm:flex-row gap-4 sm:gap-20 items-center justify-between mt-8 sm:mt-16 pb-8 px-4 sm:px-0">
             <InformativeCard title="Graduado na Uniguaçu" />
             <InformativeCard title="+ 9 anos de experiência" />
-            <InformativeCard title="Planos individualizados" />
+            <InformativeCard title="Bacharel em educação física" />
           </div>
           <img src="./images/rect2.png" alt="retângulo" className="hidden sm:block absolute top-0 right-0 h-48" />
           <img src="./images/rect.png" alt="retângulo" className="hidden sm:block absolute bottom-0 left-0 h-48" />
@@ -230,7 +230,7 @@ export default function Home() {
               text="Não! ele é disponibilizado de forma 100% gratuita aos pacientes."
             />
             <Dropdown
-              title="Como é o acompahamento para quem não pode ir presencialemnte?"
+              title="E quem não pode ir presencialmente?"
               text="O acompanhamento será online, terá a mesma qualidade da presencial. Daremos todo o suporte possível."
             />
             <Dropdown
@@ -242,8 +242,8 @@ export default function Home() {
               text="Sera encaminhado para vocẽ um guia de medidas em PDF para vocẽ realizar a sua própria avaliação seguindo as instruções do PDF. Nos passará as medidas, fotos e peso para fazermos a reavaliação mensalment."
             />
             <Dropdown
-              title="Após a compra do plano posso fazer alteração para outro?"
-              text="Vocẽ terá até 7 dias para cancelar o plano atual e fazer uma nova aquisição por outro plano."
+              title="Posso fazer alteração de plano?"
+              text="Se você já comprou um plano, terá até 7 dias para cancelar o plano atual e fazer uma nova aquisição por outro plano."
             />
           </div>
         </Section>
@@ -266,7 +266,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p className="text-zinc-300/60 font-medium text-center text-xs mt-8">Todos os direitos reservados 2023<br /> <span className="text-my">&copy;João Navarro | Ana Clara Ferreira</span></p>
+          <p className="text-zinc-300/60 font-medium text-center text-xs mt-8">Todos os direitos reservados 2023<br /> <span className="text-my">&copy;João Navarro | Ana Clara Freire</span></p>
         </div>
       </footer>
     </>
