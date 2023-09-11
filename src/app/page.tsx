@@ -115,10 +115,10 @@ export default function Home() {
                   paragraph="Esta é a fase em que estabelecemos uma base sólida para um relacionamento de confiança. Em até 72h, o treinador e a nutricionista entrarão em contato de forma individual."
                   // paragraph="Em até 72 horas, estabeleceremos uma base sólida para um relacionamento de confiança, garantindo que sua experiência seja personalizada e voltada para o seu objetivo."
                 >
-                  <p className="absolute -top-4 -left-2 sm:left-[90%] sm:top-[84px] float-number">1</p>
+                  <p className="absolute -top-4 -left-2 sm:left-[92%] sm:top-[84px] float-number">1</p>
                 </TimelineCard>
               </div>
-              <img src="./images/arrow1.png" alt="" className="absolute top-[90px] left-[292px] w-[418px] h-[299px] hidden sm:block" />
+              <img src="./images/arrow1.png" alt="" className="absolute top-[90px] left-[292px] w-[416px] h-[301px] hidden sm:block" />
               <div className="relative sm:absolute right-0">
                 <TimelineCard
                   main="Nutricionista"
@@ -131,9 +131,9 @@ export default function Home() {
               <div className="relative sm:absolute bottom-0 sm:left-24">
                 <TimelineCard
                   main="Treinador"
-                  paragraph="1 consulta + avaliação postural + treino individualizado via APP de celular + correção de exercícios via envio de vídeos no WhatsApp + suporte online."
+                  paragraph="1 consulta + avaliação postural + treino individualizado que será disponibilizado através de um APP de celular + correção de exercícios via envio de vídeos no WhatsApp + suporte online."
                 >
-                  <p className="absolute -top-4 -left-2 float-number sm:left-[90%] sm:top-[58%] sm:-right-4">3</p>
+                  <p className="absolute -top-4 -left-2 float-number sm:top-[64%] sm:left-[92%] sm:right-2">3</p>
                 </TimelineCard>
               </div>
             </div>
