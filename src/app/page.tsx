@@ -158,8 +158,8 @@ export default function Home() {
         </Section>
         <Section id="treinador" parallax={false}>
           <Text main="Treinador" subtitle="Esportivo" bg={false} />
-          <IdentityCard isJoaoPhoto={true} href="https://instagram.com/joaonavarrotreinador?igshid=MzRlODBiNWFlZA==" name="João Navarro" firstWord="Opa, " citation={
-            ['me chamo João e sou especialista em Bodybuilding & Coach.',
+          <IdentityCard isJoaoPhoto={true} href="https://instagram.com/joaonavarrotreinador?igshid=MzRlODBiNWFlZA==" name="João Navarro" firstWord="Me " citation={
+            ['chamo João e sou especialista em Bodybuilding & Coach.',
               'A prioridade do meu trabalho é cuidarmos da sua saúde de forma responsável e eficaz.',
               'Como faço isso? Através de uma abordagem totalmente individualizada, desenvolvido com base nas suas caracteísticas únicas e necessidades do seu físico, contribuindo para uma qualidade de vida e uma sensção de bem-estar para sua vida!']
           } imagePath="joao-navarro" />
