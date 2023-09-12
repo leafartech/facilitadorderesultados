@@ -107,7 +107,7 @@ export default function Home() {
               main="Como funciona"
               subtitle="o Combo Facilitador de Resultados"
             />
-            <div className="relative h-[700px] sm:h-[824px] max-w-5xl w-full flex flex-col sm:flex-row sm:items-center px-4 gap-8 sm:gap-0 mt-6">
+            <div className="relative h-[736px] sm:h-[824px] max-w-5xl w-full flex flex-col sm:flex-row sm:items-center px-4 gap-8 sm:gap-0 mt-6">
               <div className="relative sm:absolute sm:top-12">
                 <TimelineCard
                   main="Contato"
